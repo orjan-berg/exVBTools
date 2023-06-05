@@ -3,6 +3,7 @@ Function Get-DoNotUpgrade {
         $DoNotUpgrade = Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Wow6432Node\Visma\Visma Business\CurrentVersion\Database\' -Name DO_NOT_UPGRADE -ErrorAction Stop
     }
     Catch [System.Management.Automation.ItemNotFoundException]{
+        Write-Host ("DO_NOT_UPGRADE eksisterer ikke")
         New-Item -Path 'HKLM:\SOFTWARE\Wow6432Node\Visma\Visma Business\CurrentVersion\Database\' -Force
         New-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Visma\Visma Business\CurrentVersion\Database\' -Name DO_NOT_UPGRADE -Value 0 -Force
     }

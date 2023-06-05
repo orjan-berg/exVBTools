@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-# RootModule = ''
+RootModule = 'exVBTools.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.0.1'
@@ -21,13 +21,13 @@ ModuleVersion = '0.0.1'
 GUID = '9376d17e-0ae8-4620-b880-653c92e8c208'
 
 # Author of this module
-Author = 'Orjan Berg'
+Author = 'Ørjan Berg'
 
 # Company or vendor of this module
 CompanyName = 'Exsitec AS'
 
 # Copyright statement for this module
-Copyright = '(c) Orjan Berg. All rights reserved.'
+Copyright = '(c) Ørjan Berg. All rights reserved.'
 
 # Description of the functionality provided by this module
 # Description = ''
